@@ -1,12 +1,28 @@
-# Better Learn Backend
+# Backend(FastAPI + Uvicorn)
 
-## Explanation
-`main.py` → The entry point of FastAPI, where you define API routes.
-`services/` → This folder will hold functions for processing files, database operations, or text logic.
-`utils/` → This folder is for utility functions, such as checking file size/type or cleaning text.
+## How to start the server
+### 1. Activate the virtual environment
+macOS / Linux:<br>
+`source .venv/bin/activate`
 
-## Instruction
-1. Run `pip install fastapi uvicorn` to install `FastAPI` and `Uvicorn`.
-2. Run `uvicorn app.main:app --reload` then open your browser at `http://127.0.0.1:8000/docs`. FastAPI automatically generates a Swagger UI where you can test the `/` and `/upload` endpoints.
-3. Optional: Run `pip freeze > requirements.txt` to lists all Python packages currently installed in your virtual environment(so other people can install the exact same packages for reproducible).
+Windows (cmd)：<br>
+`.venv\Scripts\activate`
 
+Windows (PowerShell)：<br>
+`.venv\Scripts\Activate.ps1`
+
+### 2. Start the server
+`uvicorn main:app --reload --port 8000`
+
+### 3. Optional: Only use one command to activate and start the server
+macOS / Linux:<br>
+`source .venv/bin/activate && uvicorn main:app --reload --port 8000`
+
+Windows (PowerShell):<br>
+`.venv\Scripts\Activate.ps1; uvicorn main:app --reload --port 8000`
+
+### 4. Optional: Install the dependencies
+`pip install -r ./requirements.txt`
+
+### 5. Run the API
+`python ./main.py`
