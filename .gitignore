@@ -16,6 +16,13 @@ backend/*.pyc
 backend/.env
 backend/*.db
 
+# Python / Extract Text
+extract-text/.venv/
+extract-text/__pycache__/
+extract-text/*.pyc
+extract-text/.env
+extract-text/*.db
+
 # General
 .vscode/
 .DS_Store
