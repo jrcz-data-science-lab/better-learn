@@ -4,12 +4,15 @@ def run_script(script_name):
     subprocess.run(["python", script_name])
 
 def main():
-    questiontype = "mcma"  # we can change this later
+    questiontype = "m"  # we can change this to test different types
 
     mapping = {
         "tf": "TrueFalse.py",
         "mcsa": "MultipleChoiceSingleAnswer.py",
         "mcma": "MultipleChoiceMultipleAnswers.py",
+        "fb": "FillInTheBlank.py",
+        "sa": "ShortAnswer.py",
+        "m": "Matching.py",
         # ... add other types here
     }
 

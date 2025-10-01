@@ -232,9 +232,23 @@ if __name__ == "__main__":
 
 **True / False**:
 ![True or False](/send-prompt/img/tf.png)
+<br>
 
 **Multiple Choice Single Answer**:
 ![Multiple Choice Single Answer](/send-prompt/img/mcsa.png)
+<br>
 
 **Multiple Choice Multiple Answers**:
 ![Multiple Choice Multiple Answers](/send-prompt/img/mcma.png)
+<br>
+
+**Matching**:
+![Matching](/send-prompt/img/m.png)
+<br>
+
+**Fill In The Blank**:
+![Fill In The Blank](/send-prompt/img/fb.png)
+<br>
+
+**Short Answer**:
+![Short Answer](/send-prompt/img/sa.png)
