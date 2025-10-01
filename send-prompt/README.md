@@ -30,9 +30,6 @@ This Python project sends a prompt to a local LLM API, receives the response, an
 - **Run the script**:
   - `python main.py`
 
-- **Result**:
-  - ![Python Script](/send-prompt/img/py-script-result.png)
-
 ## How the Main Script Works
 
 ### Imports
@@ -72,7 +69,7 @@ def main():
         print(f"Unknown question type: {questiontype}")  
 ```
 
-- `questiontype` defines the type of question to generate.  
+- `questiontype` defines the type of question to generate. You can change it to other question types like 'mcsa' to run different scripts.
 - `mapping` is a dictionary linking question types to their script filenames.  
 - Looks up the script for the selected `questiontype`.  
 - If found, calls `run_script()` to execute it.  
@@ -230,3 +227,14 @@ if __name__ == "__main__":
 
 - Ensures the function runs only when script is executed directly.  
 - Prevents accidental execution when imported as a module.  
+
+## Results
+
+**True / False**:
+![True or False](/send-prompt/img/tf.png)
+
+**Multiple Choice Single Answer**:
+![Multiple Choice Single Answer](/send-prompt/img/mcsa.png)
+
+**Multiple Choice Multiple Answers**:
+![Multiple Choice Multiple Answers](/send-prompt/img/mcma.png)
