@@ -33,7 +33,62 @@ This Python project sends a prompt to a local LLM API, receives the response, an
 - **Result**:
   - ![Python Script](/send-prompt/img/py-script-result.png)
 
-## How the Script Works
+## How the Main Script Works
+
+### Imports
+
+```python
+import subprocess  
+```
+
+- `subprocess` is used to run other Python scripts from within this script.  
+
+### Function: run_script
+
+```python
+def run_script(script_name):  
+    subprocess.run(["python", script_name])  
+```
+
+- Runs a Python script specified by `script_name`.  
+- Uses a list `["python", script_name]` to invoke the interpreter.  
+
+### Main Function
+
+```python
+def main():  
+    questiontype = "tf"  # we can change this later  
+
+    mapping = {  
+        "tf": "TrueFalse.py",  
+        # "mcsa": "MultipleChoiceSingleAnswer.py",  
+        # ... add other types here  
+    }  
+
+    script = mapping.get(questiontype)  
+    if script:  
+        run_script(script)  
+    else:  
+        print(f"Unknown question type: {questiontype}")  
+```
+
+- `questiontype` defines the type of question to generate.  
+- `mapping` is a dictionary linking question types to their script filenames.  
+- Looks up the script for the selected `questiontype`.  
+- If found, calls `run_script()` to execute it.  
+- If not found, prints a warning about unknown type.  
+
+### Script Entry Point
+
+```python
+if __name__ == "__main__":  
+    main()  
+```
+
+- Ensures that the script runs only when executed directly.  
+- Prevents automatic execution if imported as a module in another script. 
+
+## How the Question Generator Script Works (`TrueFalse.py` Explaination)
 
 ### Imports
 
