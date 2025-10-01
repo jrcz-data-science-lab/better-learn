@@ -23,6 +23,13 @@ extract-text/*.pyc
 extract-text/.env
 extract-text/*.db
 
+# Python / Send Prompt
+send-prompt/.venv/
+send-prompt/__pycache__/
+send-prompt/*.pyc
+send-prompt/.env
+send-prompt/*.db
+
 # General
 .vscode/
 .DS_Store
