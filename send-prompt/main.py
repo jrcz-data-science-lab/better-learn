@@ -4,7 +4,7 @@ def run_script(script_name):
     subprocess.run(["python", script_name])
 
 def main():
-    questiontype = "m"  # we can change this to test different types
+    questiontype = "sa"  # we can change this to test different types
 
     mapping = {
         "tf": "TrueFalse.py",

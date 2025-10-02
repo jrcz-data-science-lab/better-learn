@@ -30,7 +30,15 @@ This Python project extracts text from both PDF and PPTX files. It ensures the e
   - Execute the main Python script to extract PDF and PPTX text: `python main.py`
   - This command works on macOS, Linux, and Windows (cmd or PowerShell) as long as the virtual environment is activated.
 
+- **The expected result**:
+  - ![The expected result](/extract-text/img/result.png)
+
 ## How the Script Works
+
+## Two sample files(`.pdf`, `.pptx`)
+It contains shapes, colors and text, so we can test the accuracy of the script.
+
+![sample file](/extract-text/img/sample-file.png)
 
 ### Imports
 ```python
