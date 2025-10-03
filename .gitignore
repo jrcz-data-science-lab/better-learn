@@ -30,6 +30,13 @@ send-prompt/*.pyc
 send-prompt/.env
 send-prompt/*.db
 
+# Python / Quizzes
+quizzes/.venv/
+quizzes/__pycache__/
+quizzes/*.pyc
+quizzes/.env
+quizzes/*.db
+
 # General
 .vscode/
 .DS_Store
